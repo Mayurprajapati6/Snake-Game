@@ -7,7 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-arena"></div>
+    <div class="game-container">
+        <div class="header">
+            <h1>Snake Game</h1>
+            <div id="score-board">Score: 0</div>
+        </div>
+        <div id="game-arena"></div>
+        <button class="start-button">Start Game</button>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <div class="modal-buttons">
+                <button id="restart-button" class="modal-btn green">Restart</button>
+                <button id="exit-button" class="modal-btn red">Exit</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
